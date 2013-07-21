@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>NodeOS - The NodeJS Operating System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <a href="https://github.com/NodeOS"><img style="position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-graphite@2x.png" alt="Fork me on GitHub"></a>
+      <div class="demo-headline">
+        <h1 class="demo-logo">
+          <div class="logo"></div>
+          NodeOS
+          <small>Node.js Powered Operating System</small>
+        </h1>
+      </div> <!-- /demo-headline -->
+      
+      <div class="row demo-tiles">
+        <div class="span3">
+          <div class="tile">
+            <img src="images/icons/linux.png" alt="Chat@2x" class="tile-image">
+            <h3 class="tile-title">Linux Kernel</h3>
+            <p>NodeOS leverages the strength of the linux kernel</p>
+          </div>
+        </div>
+
+        <div class="span3">
+          <div class="tile">
+            <img src="images/icons/node.png" alt="Compas@2x" class="tile-image big-illustration">
+            <h3 class="tile-title">NodeJS Runtime</h3>
+            <p>Node is the primary runtime &mdash; no bash here</p>
+          </div>
+        </div>
+
+        <div class="span3">
+          <div class="tile">
+            <img src="images/icons/npm.png" alt="Infinity-Loop@2x" class="tile-image">
+            <h3 class="tile-title">NPM Packages</h3>
+            <p>NodeOS uses NPM as its primary package manager</p>
+          </div>
+        </div>
+
+        <div class="span3">
+          <div class="tile">
+            <img src="images/icons/github.png" alt="Pensils@2x" class="tile-image">
+            <h3 class="tile-title">Github Community</h3>
+            <p>NodeOS discussion and planning through Github</p>
+          </div>
+        </div>
+        
+      </div> <!-- /tiles -->
+
+      <div class="login">
+        <div class="login-screen">
+          <div class="login-terminal">
+<div id="console">
+Welcome to NodeOS
+-----------------
+
+# <span id="cursor">|</span>
+</div>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- /container -->
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="span7">
+            <h3 class="footer-title">Share</h3>
+            <p>NodeOS is a work in progress. If you would like to support us, please share NodeOS via Twitter</p>
+            <p class="pvl">
+              <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://nodeos.github.io/" data-text="NodeOS - The NodeJS Powered Operating System" data-via="TheNodeOS" data-size="large">Tweet</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </p>
+
+          </div> <!-- /span8 -->
+
+          <div class="span5">
+            <div class="footer-banner">
+              <h3 class="footer-title">NodeOS Team</h3>
+              <ul>
+                <li>Jacob Groundwater <a href="https://twitter.com/0x604">@0x604</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Load JS here for greater good =============================-->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/flatui-checkbox.js"></script>
+    <script src="js/flatui-radio.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="js/jquery.stacktable.js"></script>
+    <script src="http://vjs.zencdn.net/c/video.js"></script>
+    <script src="js/application.js"></script>
+    <script>
+    function cursorAnimation() {
+        $('#cursor').animate({
+            opacity: 0
+        }, 'fast', 'swing').animate({
+            opacity: 1
+        }, 'fast', 'swing');
+    }
+    $(document).ready(function() {
+        setInterval ('cursorAnimation()', 600);
+    });
+    </script>
+  </body>
+</html>
