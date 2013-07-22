@@ -67,12 +67,7 @@
       <div class="login">
         <div class="login-screen">
           <div class="login-terminal">
-<div id="console">
-Welcome to NodeOS
------------------
-
-# <span id="cursor">|</span>
-</div>
+            <canvas id="canvas" width=80 height=24>No canvas support!</canvas>
           </div>
         </div>
       </div>
@@ -117,17 +112,77 @@ Welcome to NodeOS
     <script src="js/jquery.stacktable.js"></script>
     <script src="http://vjs.zencdn.net/c/video.js"></script>
     <script src="js/application.js"></script>
+    <!-- JS TTY -->
+    <script src="js/vt/parse.js"></script>
+    <script src="js/vt/emulate.js"></script>
+    <script src="js/ttyrec-browser.js"></script>
+    <script src="js/binary-read.js"></script>
+    <script src="js/vt/font.js"></script>
+    <script src="js/vt/canvasview.js"></script>
     <script>
-    function cursorAnimation() {
-        $('#cursor').animate({
-            opacity: 0
-        }, 'fast', 'swing').animate({
-            opacity: 1
-        }, 'fast', 'swing');
-    }
-    $(document).ready(function() {
-        setInterval ('cursorAnimation()', 600);
-    });
+        var tty_data;
+        var nextFrameIdx = 0;
+
+        var accurateTimeInterval = 1000/60; // max 60fps
+        var frameJumpMax = 20;
+
+        var viewReady = false;
+        var playReady = false;
+
+        var initialState;
+        var vtview;
+        setTimeout(function(){
+            vtview = new VTCanvasView(document.getElementById('canvas'), {
+                onReady: function () {
+                    viewReady = true;
+                    readyCheck();
+                },
+                fontName: 'fixed-9x18'
+            });
+            initialState = { vtview: vtview.freeze(), nextFrameIdx: 0 };
+        }, 20);
+
+        get_binary_data_async("/tty/demo", function (data, err) {
+            if ( err ) throw err;
+            tty_data = TTYRecParse(data);
+
+            playReady = true;
+            readyCheck();
+        });
+
+        function readyCheck() {
+            if ( viewReady && playReady )
+                go();
+        }
+
+        var time_diff;
+
+        function go() {
+            var now = (new Date()).getTime()/1000;
+            time_diff = now - tty_data[nextFrameIdx].time;
+
+            nextFrame();
+        }
+
+        var nextFrameTimeout;
+        function nextFrame() {
+            var now = (new Date()).getTime()/1000;
+            var framesCounted = 0;
+            while ( framesCounted < frameJumpMax && nextFrameIdx < tty_data.length && tty_data[nextFrameIdx].time + time_diff - now < 0 ) {
+                record = tty_data[nextFrameIdx++];
+                vtview.parseData(record.data);
+                framesCounted++;
+            }
+
+            vtview.draw();
+
+            if ( nextFrameIdx < tty_data.length )
+                nextFrameTimeout = setTimeout(nextFrame, (tty_data[0].time + time_diff - (new Date()).getTime()/1000) * 1000 + accurateTimeInterval);
+        }
+        setTimeout(function(){
+          go();
+          nextFrameIdx = initialState.nextFrameIdx;
+        },1000);
     </script>
   </body>
 </html>
