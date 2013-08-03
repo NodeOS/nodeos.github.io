@@ -238,7 +238,7 @@ you can use the generic selector below, but it's slower:
   margin-bottom: 12px;
 }
 .demo-tiles {
-  margin-bottom: 46px;
+  margin-bottom: 80px;
 }
 .demo-icons {
   font-size: 32px;
@@ -319,8 +319,9 @@ you can use the generic selector below, but it's slower:
   border-radius: 50%;
 }
 .demo-download img {
-  height: 104px;
-  width: 82px;
+  margin-top:-15px;
+  height: 150px;
+  width: 150px;
 }
 .demo-download-text {
   font-size: 15px;
@@ -409,6 +410,21 @@ you can use the generic selector below, but it's slower:
   .demo-browser {
     background-image: url(../images/demo/browser-2x.png);
   }
+}
+@media (min-width: 1200px) {
+    #navbar-top .container {
+        width:1170px;
+    }   
+}
+@media (min-width: 979px) and (max-width: 1200px) {
+    #navbar-top .container {
+        width:960px;
+    }   
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    #navbar-top .container {
+        width:744px;
+    }   
 }
 body {
   color: #34495e;
@@ -3566,22 +3582,37 @@ body.vjs-full-window {
   -moz-border-radius: 10px;
   border-radius: 10px;
 }
+.blogbanner blockquote {
+  padding-top:60px;
+  font-size: xx-large;
+  text-align:justify;
+  color: #ECF0F1;
+  border: none;
+}
+.blogbanner .readmore {
+  width: 150px;
+  float: right;
+  margin-top:20px;
+}
+.dark-container a{
+  color: white;
+}
+.dark-container {
+  color:white;
+  text-align:center;
+  padding: 50px 0;
+}
 .login {
   background: url(../images/login/imac.png) 0 0 no-repeat;
   background-size: 940px 778px;
-  color: #ffffff;
   margin-bottom: 77px;
   padding: 38px 38px 267px;
   position: relative;
 }
-.login-terminal {
-  white-space: pre;
-  font-family: monospace;
-}
 .login-screen {
-  background-color: black;
-  min-height: 460px;
-  padding: 10px;
+  background-color: white;
+  padding-top: 20px;
+  text-align:center;
 }
 .login-icon {
   left: 200px;
