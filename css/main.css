@@ -1,5 +1,6 @@
 .container {
-	max-width: 600px;
+	max-width: 900px;
+	width:auto;
 }
 
 .header {
@@ -15,10 +16,6 @@
   box-shadow: 0 2px 2px rgba(5, 5, 5, 0.1);
 }
 
-blockquote {
-	margin: 0 10px;
-	padding: 0;
-}
 
 .header ul {
   margin: 0 20px;
@@ -65,16 +62,26 @@ a:hover {
   color: #31485F;
 }
 
-.blogbanner {
-	margin-right: 20px;
+.blogbanner blockquote {
+	margin: 40px 20px 00px 20px;
+	padding: 0;
+	text-align: inherit;
 }
 
+.readmore {
+	margin: 0px 20px 40px 0px;
+}
+.row {
+	margin-left: 0px;
+}
 
+.screen {
+	margin: 20px;
+}
 
 .blog {
   margin: auto;
   width: 70%;
-  min-width: 600px;
   min-height: 100%;
   padding-top: 90px;
   background-color: white;
@@ -105,7 +112,7 @@ a:hover {
 }
 
 .blog-post:first-child {
-	margin-top: -150px;
+	margin-top: -120px;
 }
 
 .blog-content {
@@ -221,26 +228,6 @@ a:hover {
   font-size: .25em;
 }
 
-@media screen and (min-width: 1200px) { 
-
-  .responsive {
-    font-size: 200px;
-  }
-  
-}
-
-@media screen and (min-width: 601px) and (max-width: 1199px) { 
-
-  .responsive {
-    font-size: 100px;
-  }
-  
-}
-
-@media screen and (max-width: 600px) { 
-
-  .responsive {
-    font-size: 60px;
-  }
-  
+#footer {
+	padding: 10px 30px;
 }
