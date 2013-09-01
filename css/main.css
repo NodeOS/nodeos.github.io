@@ -94,7 +94,7 @@ a:hover {
   padding-right: 55px;
   float: right;
   clear:both;
-  font-size: .8em;
+  font-size: .95em;
   border-right: 5px solid #778793;
 }
 
@@ -110,11 +110,11 @@ a:hover {
 
 .blog-content {
   top: 50px;
-  font-size: .9em;
+  font-size: 1.2em;
   clear: both;
   margin-top: 80px;
   padding: 0px 25px;
-  border-left: 1px solid #778793;
+  border-left: 1px solid #EBF0F3;
 }
 
 .tiles-container {
