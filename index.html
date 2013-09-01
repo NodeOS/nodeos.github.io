@@ -1,56 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>NodeOS - The NodeJS Operating System</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Loading Bootstrap -->
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Loading Flat UI -->
-    <link href="css/flat-ui.css" rel="stylesheet">
-
-    <link rel="shortcut icon" href="images/favicon.ico">
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-    <![endif]-->
-  </head>
-  <body style="padding-top:150px;">
+---
+layout: default
+title: Node OS
+---
     <a href="https://github.com/NodeOS"><img style="position: fixed; top: 0; right: 0; border: 0; width: 149px; height: 149px; z-index:2000;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-graphite@2x.png" alt="Fork me on GitHub"></a>
-    
-    <div id="navbar-top">
-    <div class="container">
-      
-      <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-          <a class="brand" href="/">NodeOS</a>
-          <ul class="nav">
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="https://github.com/NodeOS/NodeOS/releases/">Download</a></li>
-            <li><a href="https://github.com/NodeOS/NodeOS/wiki">Wiki</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    </div>
+
     <div class="container">  
-      <div class="login">
-        <div class="login-screen">
-          <div class="login-terminal">
-            <img src="/logo.png"/>
-            <h1 class="demo-logo">NodeOS</h1>
-          </div>
+      <div class="row">
+        <div class="col-xs-6">
+          <h1 id="title">node.os</h1>
+          <h2>a hacker friendly os</h2>
+        </div>
+        <div class="col-xs-6" style="text-align:center;">
+          <img style="text-align:center; width:100%; max-height:500px; max-width:500px;" id="logo" src="/images/icons/nodeos@2x.png">
         </div>
       </div>
+           
     </div>
     
     <div style="background:#7F8C8D; height:250px; margin-bottom: 60px;">
     
     <div class="container">
-    <div class="row">
+    <div class="row-fluid">
     <div class="span12">
     <div class="blogbanner">
       <blockquote>NodeOS is an hacker-friendly operating system written in Node.js
@@ -62,50 +32,51 @@
     </div>
     </div>
       
-    <div class="container">
-      <div class="row demo-tiles">
-        <div class="span3">
-          <div class="tile">
-            <img src="images/icons/linux.png" alt="Chat@2x" class="tile-image">
-            <h3 class="tile-title">Linux Kernel</h3>
-            <p>NodeOS is a full OS built on top of the Linux kernel</p>
-          </div>
+<div class="tiles-container" id="features">
+  <div class="tile">
+    <div class='tile-img'>
+          <img src="images/icons/linux.png" alt="Chat@2x" class="tile-image">
         </div>
-
-        <div class="span3">
-          <div class="tile">
-            <img src="images/icons/node.png" alt="Compas@2x" class="tile-image big-illustration">
-            <h3 class="tile-title">NodeJS Runtime</h3>
-            <p>Node is the primary runtime &mdash; no bash here</p>
-          </div>
+    <div class='tile-content'>
+          <h3>Linux Kernel</h3>
+          <p>NodeOS is a full OS built on top of the Linux kernel</p>
         </div>
-
-        <div class="span3">
-          <div class="tile">
-            <img src="images/icons/npm.png" alt="Infinity-Loop@2x" class="tile-image">
-            <h3 class="tile-title">NPM Packages</h3>
-            <p>NodeOS uses NPM as its primary package manager</p>
-          </div>
+  </div>
+  <div class="tile">
+    <div class='tile-img'>
+        <img src="images/icons/node.png" alt="Compas@2x" class="tile-image">
+      </div>
+    <div class='tile-content'>
+        <h3>NodeJS Runtime</h3>
+        <p>Node is the primary runtime &mdash; no bash here</p>
+      </div>
+  </div>
+  <div class="tile">
+    <div class='tile-img'>
+      <img src="images/icons/npm.png" alt="Infinity-Loop@2x" class="tile-image">
+    </div>  
+    <div class='tile-content'>
+      <h3>NPM Packages</h3>
+        <p>NodeOS uses NPM as its primary package manager</p> 
+      </div>
+  </div>
+  <div class="tile">
+    <div class='tile-img'>
+        <img src="images/icons/github.png" alt="Pensils@2x" class="tile-image">
         </div>
-
-        <div class="span3">
-          <div class="tile">
-            <img src="images/icons/github.png" alt="Pensils@2x" class="tile-image">
-            <h3 class="tile-title">Hosted on Github</h3>
-            <p>Open and easy to contribute to &mdash; pull request friendly</p>
-          </div>
-        </div>
-        
-      </div> <!-- /tiles -->
-    </div>
-    
+    <div class='tile-content'>
+          <h3>Hosted on Github</h3>
+          <p>Open and easy to contribute to &mdash; pull request friendly</p>
+      </div>
+  </div>
+</div>
     <div style="background:#2C3E50; padding:0px 0;">
     <div class="container dark-container">
       <div class="row">
-        <div class="span2 offset3">
+        <div class="offset1 span2">
           <img src="/images/nodeos-update.png">
         </div>
-        <div class="span6">
+        <div class="span4">
         <!-- Begin MailChimp Signup Form -->
         <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
         <style type="text/css">
@@ -127,39 +98,3 @@
     </div> <!-- /container -->
     </div>
 
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="span7">
-            <h3 class="footer-title">Share</h3>
-            <p>NodeOS is a work in progress.</p>
-            <p>If you would like to support us, please share NodeOS via Twitter</p>
-            <p class="pvl">
-              <a href="https://twitter.com/TheNodeOS" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @TheNodeOS</a>
-              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-              <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://nodeos.github.io/" data-text="NodeOS - The NodeJS Powered Operating System" data-via="TheNodeOS" data-size="large">Tweet</a>
-              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-            </p>
-
-          </div> <!-- /span8 -->
-
-        </div>
-      </div>
-    </footer>
-    <!-- Load JS here for greater good =============================-->
-    <script src="js/jquery-1.8.3.min.js"></script>
-    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
-    <script src="js/jquery.ui.touch-punch.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-select.js"></script>
-    <script src="js/bootstrap-switch.js"></script>
-    <script src="js/flatui-checkbox.js"></script>
-    <script src="js/flatui-radio.js"></script>
-    <script src="js/jquery.tagsinput.js"></script>
-    <script src="js/jquery.placeholder.js"></script>
-    <script src="js/jquery.stacktable.js"></script>
-    <script src="http://vjs.zencdn.net/c/video.js"></script>
-    <script src="js/application.js"></script>
-    <script src="js/jquery.inview.js"></script>
-  </body>
-</html>

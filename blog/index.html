@@ -1,0 +1,18 @@
+---
+layout: default
+title: Node OS
+---
+
+<div class="blog">
+	{% for post in site.categories.blog %}
+	<div class="blog-post">	
+		<div class="blog-title">
+			<a href="{{post.url}}">{{post.title}}</a>
+		</div>
+			<p class="blog-date">{{ post.date | date_to_string }}</p>
+		<div class="blog-content">
+			{{post.content}}
+		</div>
+	</div>
+	{% endfor %}	
+</div>
