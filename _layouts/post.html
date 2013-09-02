@@ -1,16 +1,14 @@
 ---
-layout: default
+layout: blog
 ---
 <div class="container">
-<div class="row">
-	<div class="blog-post span8">	
-		<div class="blog-title">
-			<a href="{{page.url}}">{{page.title}}</a>
-		</div>
+  <div class="row">
+  	<div class="col-md-8 col-md-offset-2">	
+  		<h2><a href="{{page.url}}">{{page.title}}</a></h2>
 			<p class="blog-date">{{ page.date | date_to_string }}</p>
-		<div class="blog-content">
-			{{content}}
-		</div>
-	</div>
-</div>
+  		<div class="blog-content">
+  			{{content}}
+  		</div>
+  	</div>
+  </div>
 </div>

@@ -2,94 +2,97 @@
 layout: default
 title: Node OS
 ---
-    <a href="https://github.com/NodeOS"><img style="position: fixed; top: 0; right: 0; border: 0; width: 149px; height: 149px; z-index:2000;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-graphite@2x.png" alt="Fork me on GitHub"></a>
 
-    <div class="container">  
-      <div class="row">
-        <div class="screen">
-          <img src="images/terminal-window@2x.png">
-        </div>
-      </div>           
+{% include forkme.html project="NodeOS/NodeOS" %}
+
+<!-- Headline -->
+<div class="container">  
+  <div class="row">
+  
+    <div class="col-md-12">
+      <img src="images/terminal-window@2x.png" width=100%>
     </div>
     
-    <div style="background:#7F8C8D; min-height:230px; margin-bottom: 60px;">
+  </div>           
+</div>
+
+<!-- Tagline -->
+<div class="section inverse">
+  <div class="container">
+    <div class="row">
+  
+      <div class="col-md-12">
+          <p class="banner">
+            NodeOS is an hacker-friendly operating system written in Node.js
+            <a href="/blog/introduction/" class="btn btn-large btn-primary">Read More</a>
+          </p>
+      </div>
     
-    <div class="container">
-    <div class="row-fluid">
-    <div class="span12">
-    <div class="blogbanner">
-      <blockquote>NodeOS is an hacker-friendly operating system written in Node.js
-      </blockquote>
-      <div class="readmore"><a href="/blog/introduction/" class="btn btn-large btn-block btn-primary">Read More</a></div>
     </div>
-    </div>
-    </div>
-    </div>
-    </div>
-      
-<div class="tiles-container" id="features">
-  <div class="tile">
-    <div class='tile-img'>
-          <img src="images/icons/linux.png" alt="Chat@2x" class="tile-image">
-        </div>
-    <div class='tile-content'>
-          <h3>Linux Kernel</h3>
-          <p>NodeOS is a full OS built on top of the Linux kernel</p>
-        </div>
-  </div>
-  <div class="tile">
-    <div class='tile-img'>
-        <img src="images/icons/node.png" alt="Compas@2x" class="tile-image">
-      </div>
-    <div class='tile-content'>
-        <h3>NodeJS Runtime</h3>
-        <p>Node is the primary runtime &mdash; no bash here</p>
-      </div>
-  </div>
-  <div class="tile">
-    <div class='tile-img'>
-      <img src="images/icons/npm.png" alt="Infinity-Loop@2x" class="tile-image">
-    </div>  
-    <div class='tile-content'>
-      <h3>NPM Packages</h3>
-        <p>NodeOS uses NPM as its primary package manager</p> 
-      </div>
-  </div>
-  <div class="tile">
-    <div class='tile-img'>
-        <img src="images/icons/github.png" alt="Pensils@2x" class="tile-image">
-        </div>
-    <div class='tile-content'>
-          <h3>Hosted on Github</h3>
-          <p>Open and easy to contribute to &mdash; pull request friendly</p>
-      </div>
   </div>
 </div>
-    <div style="background:#2C3E50;">
-    <div class="container dark-container">
-      <div class="row">
-        <div class="span2 offset1">
-          <img src="/images/nodeos-update.png" style="width:100%;">
-        </div>
-        <div class="span6">
-        <!-- Begin MailChimp Signup Form -->
-        <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
-        <style type="text/css">
-        	#mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; }
-        	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-        	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-        </style>
-        <div id="mc_embed_signup">
-        <form action="http://github.us7.list-manage.com/subscribe/post?u=799b4badd48caceec812082ea&amp;id=28162b6a0d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        	<label for="mce-EMAIL">Subscribe for Updates</label>
-        	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-        	<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-        </form>
-        </div>
 
-        <!--End mc_embed_signup-->
+<!-- Tiles -->
+<div class="section">
+  <div class="container">
+    <div class="row" id="tiles">
+  
+      <div class="col-md-3">
+        <div class="tile">
+          <img src="images/linux.png" alt="Chat@2x">
+          <div class="caption">
+            <h3>Linux Kernel</h3>
+            <p>NodeOS is a full OS built on top of the Linux kernel</p>
+          </div>
         </div>
-      </div>  
-    </div> <!-- /container -->
+      </div>
+    
+      <div class="col-md-3">
+        <div class="tile">
+          <img src="/images/nodejs.png" alt="Compas@2x">
+          <div class="caption">
+            <h3>NodeJS Runtime</h3>
+            <p>Node is the primary runtime &mdash; no bash here</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-3">
+        <div class="tile">
+          <img src="/images/npm.png" alt="Infinity-Loop@2x">
+          <div class="caption">
+            <h3>NPM Packages</h3>
+            <p>NodeOS uses NPM as its primary package manager</p> 
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-3">
+        <div class="tile">
+          <img src="/images/github.png" alt="Pensils@2x">
+          <div class="caption">
+            <h3>Hosted on Github</h3>
+            <p>Open and easy to contribute to &mdash; pull request friendly</p>
+          </div>
+        </div>
+      </div>
+    
     </div>
+  </div>
+</div>
 
+<!-- Signup Banner -->
+<div class="section inverse">
+  <div class="container">
+    <div class="row">
+  
+      <div class="col-md-2 col-md-offset-3">
+        <img src="/images/nodeos-update.png" style="max-height:150px;">
+      </div>
+      <div class="col-md-6">
+      {% include signup.html %}
+      </div>
+    
+    </div>  
+  </div>
+</div>
