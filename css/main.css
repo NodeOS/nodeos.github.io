@@ -1,3 +1,7 @@
+body {
+  margin-top:80px;
+}
+
 .container {
 	max-width: 900px;
 	width:auto;
@@ -71,10 +75,10 @@ a:hover {
 .readmore {
 	margin: 0px 20px 40px 0px;
 }
-.row {
-	margin-left: 0px;
+/*.row {
+  margin-left: 0px;
 }
-
+*/
 .screen {
 	margin: 20px;
 }
@@ -116,12 +120,12 @@ a:hover {
 }
 
 .blog-content {
+  text-align:justify;
   top: 50px;
   font-size: 1.2em;
   clear: both;
   margin-top: 80px;
   padding: 0px 25px;
-  border-left: 1px solid #EBF0F3;
 }
 
 .tiles-container {
