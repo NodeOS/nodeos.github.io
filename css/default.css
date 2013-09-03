@@ -49,6 +49,14 @@ div.tile-image {
   text-align: justify;
 }
 
+.trampstamp {
+  text-align: center;
+}
+
+.trampstamp img {
+  max-height: 150px;
+}
+
 footer {
   padding-top: 100px;
   padding-bottom: 100px;

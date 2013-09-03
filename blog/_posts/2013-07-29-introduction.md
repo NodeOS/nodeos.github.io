@@ -5,13 +5,13 @@ tagline: The Motivation Behind NodeOS
 author: Jacob Groundwater
 ---
 
-My name is **[Jacob Groundwater](https://twitter.com/0x604)**, and I am a professional software engineer. I am working on a NodeJS based operating system.
+My name is **[Jacob Groundwater](https://twitter.com/0x604)**. I am a software engineer, and am working on a NodeJS based operating system.
 
 I am not an OS developer, and I am not a kernel hacker.
-I have used many high-level programming languages through my career including PHP, Python, Matlab, Java, and many more.
-Of these other languages, I have never consider making an operating system with any of them.
+I have used many high-level programming languages through my career including PHP, Python, Java, Ruby, and a few more.
+Of these other languages, I would never consider making an operating system with any of them.
 
-> *Node is different.*
+*Node is different.*
 
 The more I use Node, the more I wish I could use it in new places.
 Node is not a perfect language by any means,
