@@ -24,7 +24,7 @@ Every library, binary, and service exposed by any package on NPM is useable unal
 NPM provides a value unmatched by almost any other package manager.
 Anyone can contribute a new package in mere minutes.
 If you have an idea for a tool or feature that would improve NodeOS,
-you can created and distribute your tool immediately.
+you can create and distribute your tool immediately.
 
 Many NPM packages are hosted on Github,
 so fixing any package on NodeOS is just a pull-request away.
