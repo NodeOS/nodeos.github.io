@@ -43,9 +43,15 @@ div.tile-image {
   text-align: center;
 }
 
+.blog-content pre,
+.blog-content ul,
 .blog-content p {
+  margin-bottom: 40px;
+}
+
+.blog-content p,
+.blog-content li {
   font-size: 14pt;
-  margin-bottom: 2em;
   text-align: justify;
 }
 
