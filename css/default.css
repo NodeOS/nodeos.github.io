@@ -26,6 +26,7 @@ body {
 
 p.banner {
   font-size: 4em;
+  text-align: center;
 }
 
 div.tile img {
