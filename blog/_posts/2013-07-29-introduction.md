@@ -14,7 +14,7 @@ Of these other languages, I would never consider making an operating system with
 *Node is different.*
 
 The more I use Node, the more I wish I could use it in new places.
-Node is not a perfect language by any means,
+Node is not a perfect platform by any means,
 but I believe the current state of the language and community might just make NodeOS not only possible but awesome.
 
 NodeOS is designed to support one of the best package managers I have ever used, NPM.
