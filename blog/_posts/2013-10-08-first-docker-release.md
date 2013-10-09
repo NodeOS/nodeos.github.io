@@ -47,7 +47,7 @@ with the following `Dockerfile`
 	RUN npkg install bin-cat
 	RUN npkg install bin-pwd
 
-Build and run the image with:
+Now you try:
 
 	git clone https://gist.github.com/6757451.git MyNodeOS
 	sudo docker build -t MyNodeOS MyNodeOS 
