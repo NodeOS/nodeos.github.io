@@ -47,7 +47,7 @@ div.tile-image {
   margin-bottom: 150px;
 }
 .blog-content pre,
-.blog-content ul,
+.blog-content ul, ol,
 .blog-content p {
   margin-bottom: 40px;
 }
