@@ -96,7 +96,7 @@ This will install the `nsh` command to your custom image.
 
 Add as many `RUN` lines as you like.
 Remember you *only* want to install packages that expose executables like `npm` or `ncurl`.
-If you're stuck, take a peek at [an example `Dockerfile`](https://gist.github.com/jacobgroundwater/6748863).
+If you're stuck, take a peek at [an example `Dockerfile`](https://gist.github.com/groundwater/6748863).
 
 When your `Dockerfile` is ready, [build](http://docs.docker.io/en/latest/commandline/command/build/) your custom NodeOS image with:
 
