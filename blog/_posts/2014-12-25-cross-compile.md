@@ -14,15 +14,15 @@ to go down the cross-toolchain all the way. After several tries to do it myself,
 I ended using [Linux From Scratch](http://www.linuxfromscratch.org/) with the
 help of [Linux From Script](http://www.lfscript.org/). Problem is that's too
 much focused on create a regular Linux on the same host machine, and the worst
-thing, it require to exec some commands as root. [Cross Linux From Scratch]
-(http://clfs.org/) is a better alternative, but it involve a lot of steps to
-create the cross-toolchain, and worse than that, it still requires to exec
-commands as root. On the other hand, [its embebed version]
-(http://clfs.org/view/clfs-embedded/) is simpler to build thanks to the usage of
-[musl](http://www.musl-libc.org/) as C lib instead of standard [glibc]
-(http://www.gnu.org/software/libc/), so although it makes NodeOS not so standard
-related to desktop and server OSes, it makes it also simpler and more memory
-friendly.
+thing, it require to exec some commands as root.
+[Cross Linux From Scratch] (http://clfs.org/) is a better alternative, but it
+involve a lot of steps to create the cross-toolchain, and worse than that, it
+still requires to exec commands as root. On the other hand,
+[its embebed version](http://clfs.org/view/clfs-embedded/) is simpler to build
+thanks to the usage of [musl](http://www.musl-libc.org/) as C lib instead of
+standard [glibc](http://www.gnu.org/software/libc/), so although it makes NodeOS
+not so standard related to desktop and server OSes, it makes it also simpler and
+more memory friendly.
 
 I wanted to use a glibc based system, but this is the only one I've managed to
 make it to work. This has some drawbacks that needs improvement (or not :-) ):
@@ -31,19 +31,18 @@ make it to work. This has some drawbacks that needs improvement (or not :-) ):
   of GNU glibc will not compile. It's a fail of the developers, so this could
   help to improve their code to be C standard compliant (win-win for all :-) ).
 * OpenSSL doesn't work well with musl (due to the use of that non-standard
-  extensions...) and needs to be patched since [nobody]
-  (https://rt.openssl.org/Ticket/Display.html?id=2823&user=guest&pass=guest)
+  extensions...) and needs to be patched since
+  [nobody](https://rt.openssl.org/Ticket/Display.html?id=2823&user=guest&pass=guest)
   [fix](https://rt.openssl.org/Ticket/Display.html?id=3526&user=guest&pass=guest)
   [it](https://rt.openssl.org/Ticket/Display.html?id=3123) :-( Luckily
-  [it's an easy one]
-  (https://raw.githubusercontent.com/maximeh/buildroot/master/package/openssl/openssl-004-musl-termios.patch)...
-* GCC is not aware of musl so[it needs to be patched]
-  (http://patches.clfs.org/embedded-dev/gcc-4.7.3-musl-1.patch), too. This leads
-  us to use a fixed GCC version, but since it's somewhat new (April 2014) and
-  probably we'll move to [llvm](http://llvm.org/) when
+  [it's an easy one](https://raw.githubusercontent.com/maximeh/buildroot/master/package/openssl/openssl-004-musl-termios.patch)...
+* GCC is not aware of musl so
+  [it needs to be patched](http://patches.clfs.org/embedded-dev/gcc-4.7.3-musl-1.patch)
+  , too. This leads us to use a fixed GCC version, but since it's somewhat new
+  (April 2014) and probably we'll move to [llvm](http://llvm.org/) when
   [Linux could be compiled with it](http://llvm.linuxfoundation.org/) so we can
-  use one of the llvm [Javascript]
-  (http://badassjs.com/post/39573969361/llvm-js-llvm-itself-compiled-to-javascript-via)
+  use one of the llvm
+  [Javascript](http://badassjs.com/post/39573969361/llvm-js-llvm-itself-compiled-to-javascript-via)
   [flavours](http://leaningtech.com/cheerp/) on the userspace, then it's a fair
   trade by this moment.
 * I was not be able to use a dynamically linked Node.js executable, so I'm using
