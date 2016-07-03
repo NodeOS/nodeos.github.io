@@ -155,9 +155,17 @@ a {
 }
 
 #main .sph1 {
-    margin: 0% 0% 5% 0%;
+    margin: 5% 0% 5% 0%;
     font-size: 50px;
     display: block;
+}
+
+#content {
+    min-height: 400px;
+    margin-bottom: 100px;
+    clear: both;
+    overflow: hidden;
+
 }
 
 #main .sph2 {
@@ -231,10 +239,19 @@ a {
     border: 1px solid rgba(17,17,17,0.5);
 }
 
+#subtxt {
+    font-family: 'Raleway';
+    color: white;
+    margin-right: 2%;
+}
+
 /* MEDIA */
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
+    body {
+        margin-bottom: 5%;
+    }
     .col2 {
         width: 100%;
     }
@@ -247,6 +264,125 @@ and (max-device-width : 480px) {
     }
     .navicon {
         display: block;
+    }
+    #main .sph1 {
+        font-size: 25px;
+    }
+    
+    #main .sph2 {
+        font-size: 17.5px;
+    }
+    #footer {
+        font-size: 10px;
+        height: 75px;
+    }
+    #subscribe {
+        width: 100%;
+        text-align: center;
+        
+    }
+    #subscribe input[type="text"] {
+        margin: 1px 0px 3px 0px;
+        width: 75%;
+    }
+    #subscribe input[type="submit"] {
+        width: 50%;
+    }
+    #info {
+        padding-top: 150px;
+    }
+    #header .nav {
+        font-size: 10px;
+    }
+}
+@media (min-width: 0px) and (max-width: 600px)  {
+    body {
+        margin-bottom: 5%;
+    }
+    .col2 {
+        width: 100%;
+    }
+    .col4 {
+        width: 100%;
+        display: block;
+    }
+    #download {
+        margin-bottom: 5%;
+    }
+    .navicon {
+        display: block;
+    }
+    #main .sph1 {
+        font-size: 25px;
+    }
+    
+    #main .sph2 {
+        font-size: 17.5px;
+    }
+    #footer {
+        font-size: 10px;
+        height: 75px;
+    }
+    #subscribe {
+        width: 100%;
+        text-align: center;
+        
+    }
+    #subscribe input[type="text"] {
+        margin: 1px 0px 3px 0px;
+        width: 75%;
+    }
+    #subscribe input[type="submit"] {
+        width: 50%;
+    }
+    #info {
+        padding-top: 150px;
+    }
+    #header .nav {
+        font-size: 10px;
+    }
+    #header-hex {
+        height: 150px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .col4 {
+        width: 100%;
+        display: block;
+    }
+    #main .sph1 {
+        font-size: 25px;
+    }
+    
+    #main .sph2 {
+        font-size: 17.5px;
+    }
+    #download {
+        margin-bottom: 5%;
+    }
+    #header-hex {
+        height: 150px;
+    }
+    #subscribe input[type="submit"] {
+        width: 14%;
+    }
+    #footer {
+        font-size: 10px;
+        height: 75px;
+    }
+    #subscribe {
+        width: 100%;
+        text-align: center;     
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1680px) {
+    #footer {
+        font-size: 13px;
+    }
+    #download {
+        margin-bottom: 5%;
     }
 }
 /* END MEDIA */
