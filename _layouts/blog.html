@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<h3 class="title is-32">Blog</h3>
+
+{% for post in paginator.posts %}
+<div class="box">
+  <div class="media">
+    <div class="media-left">
+      <figure class="image is-64x64">
+        <img src="{{ post.author-img }}" alt="Image">
+      </figure>
+    </div>
+    <div class="media-content">
+      <a href="{{ post.url }}">
+        <h4 class="post title is-4">{{ post.title | escape }}</h4>
+      </a>
+      <a href="https://github.com/{{ post.github_username }}">
+        <p class="title is-6">{{ post.author | escape }} - @{{ post.github_username | escape }}</p>
+      </a>
+    </div>
+  </div>
+  <div class="content">
+    <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+    <small>11:09 PM - 1 Jan 2016</small>
+  </div>
+</div>
+{% endfor %}

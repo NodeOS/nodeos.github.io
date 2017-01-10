@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="columns">
+  <div class="column is-half">
+    <h1 class="title">
+      {{ site.title | escape }}
+    </h1>
+    <h2 class="subtitle">
+      {{ site.description | escape }}
+    </h2>
+    <img class="hero-image" src="{{ "/assets/images/terminal-window.png" | relative_url }}">
+  </div>
+  <div class="column">
+    <ul>
+      <li><img src="{{ "/assets/images/linux.png" | relative_url }}" />node-os is a full operating system built on top of the linux kernel</li>
+      <li><img src="{{ "/assets/images/nodejs.png" | relative_url }}" />node is the primary runtime - no bash here</li>
+      <li><img src="{{ "/assets/images/npm.png" | relative_url }}" />node-os uses npm as its primary package manager</li>
+      <li><img src="{{ "/assets/images/github.png" | relative_url }}" />open and easy to contribute to - pull request friendly</li>
+    </ul>
+    <a class="button is-outlined is-dark is-large download">
+      <span class="icon">
+        <i class="fa fa-download"></i>
+      </span>
+      <span>Download</span>
+    </a>
+  </div>
+</div>
