@@ -6,6 +6,7 @@ permalink: /blog/:title
 url: "https://node-os.com"
 twitter_username: thenodeos
 github_username:  nodeos
+repository: nodeos/nodeos
 
 # Build settings
 markdown: kramdown

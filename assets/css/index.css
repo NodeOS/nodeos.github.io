@@ -38,10 +38,6 @@
 	width: 80%;
 }
 
-.download {
-	margin-left: 25%;
-}
-
 .download:hover {
 	background-color: #1D3555 !important;
 	transition: all 0.3s ease;

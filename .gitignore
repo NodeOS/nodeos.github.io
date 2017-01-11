@@ -1,4 +1,11 @@
+.DS_Store
+
+# Jekyll
 _site/
 .sass-cache/
 .jekyll-metadata
-.DS_Store
+
+# Node.js
+.npm/
+node_modules/
+npm-debug.log*
