@@ -14,6 +14,9 @@ gems:
   - jekyll-feed
   - jekyll-paginate
 exclude:
+  - scripts
+  - templates
+  - package.json
   - Gemfile
   - Gemfile.lock
 paginate: 5

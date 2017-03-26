@@ -42,7 +42,7 @@ async.waterfall([
 
     var posts = []
 
-    function processResults(error, results) {
+    function process_results(error, results) {
       if (error)
       {
         callback(error)
@@ -52,7 +52,7 @@ async.waterfall([
 
       if (github.hasNextPage(results))
       {
-        github.getNextPage(results, processResults)
+        github.getNextPage(results, process_results)
       } else {
         callback(null, posts)
       }
@@ -64,7 +64,7 @@ async.waterfall([
       state: "all",
       labels: "blog",
       per_page: 100
-    }, processResults)
+    }, process_results)
   },
 
   function write_posts(posts, callback)
