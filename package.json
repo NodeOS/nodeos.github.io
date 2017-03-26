@@ -1,0 +1,18 @@
+{
+  "name": "nodeos.github.io",
+  "description": "NodeOS website",
+  "author": "NodeOS",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "scripts/ci-blog.js"
+  },
+  "dependencies": {
+    "async": "^2.1.4",
+    "dateformat": "^2.0.0",
+    "fs-extra": "^1.0.0",
+    "github": "^7.3.2",
+    "lodash": "^4.17.4",
+    "simple-git": "^1.65.0"
+  }
+}

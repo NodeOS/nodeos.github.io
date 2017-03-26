@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<h3 class="title is-32">
+  /blog/{{ page.title }}</h3>
+
+<div class="media">
+  <div class="media-left">
+    <figure class="image is-64x64">
+      <img src="{{ page.avatar-url }}" alt="Image">
+    </figure>
+  </div>
+  <div class="media-content">
+    <a href="https://github.com/{{ page.author | escape }}">
+      <span>@{{ page.author | escape }}</span>
+    </a>
+      <p>{{ page.date | date: '%I:%M - %-d %b %Y' }}</p>
+  </div>
+</div>
+
+<div class="content">
+  {{ page.content }}
+
+  <hr>
+
+  <a href="{{ page.github-url }}">{{ page.comments }} Comments</a>
+</div>

@@ -1,0 +1,69 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.hero-head {
+	margin-bottom: 120px;
+}
+
+.hero-body {
+	padding: 5%;
+}
+
+.banner {
+	width: 100%;
+	position: absolute;
+}
+
+.nav {
+	box-shadow: none !important;
+}
+
+.nav-item {
+	color: white !important;
+}
+
+.nav-item{
+	font-size: 1.1em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.nav-item:hover {
+	text-decoration: underline;
+}
+
+.hero-image {
+	width: 80%;
+}
+
+.download:hover {
+	background-color: #1D3555 !important;
+	transition: all 0.3s ease;
+}
+
+ul li img {
+	width: 15%;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.subscribe {
+	background-color: #1D3555;
+}
+
+.subscribe h1 {
+	margin-top: 5px;
+	margin-right: 20px;
+	font-size: 1.2em;
+	color: white;
+}
+
+.media {
+  margin-bottom: 12px;
+}
+
+.post.title {
+  margin-bottom: 8px !important;
+}

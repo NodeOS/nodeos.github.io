@@ -1,0 +1,23 @@
+title: Node-OS
+email: your-email@domain.com
+description: The first operating system powered by node.js and npm
+baseurl: ""
+permalink: /blog/:title
+url: "https://node-os.com"
+twitter_username: thenodeos
+github_username:  nodeos
+repository: nodeos/nodeos
+
+# Build settings
+markdown: kramdown
+gems:
+  - jekyll-feed
+  - jekyll-paginate
+exclude:
+  - scripts
+  - templates
+  - package.json
+  - Gemfile
+  - Gemfile.lock
+paginate: 5
+paginate_path: "/blog/page/:num/"

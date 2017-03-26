@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+<h3 class="title is-32">/blog/</h3>
+
+<hr>
+
+{% for post in paginator.posts %}
+<div class="">
+  <div class="media">
+    <div class="media-left">
+      <figure class="image is-64x64">
+        <img src="{{ post.avatar-url }}" alt="Image">
+      </figure>
+    </div>
+    <div class="media-content">
+      <a href="{{ post.url }}">
+        <h4 class="post title is-4">{{ post.title | escape }}</h4>
+      </a>
+      <a href="https://github.com/{{ post.author | escape }}">
+        <span class="subtitle">@{{ post.author | escape }}</span>
+      </a>
+    </div>
+  </div>
+  <div class="content">
+    <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+    <a href="{{ post.github-url }}" class="tag">{{ post.comments }} Comments</a>
+    <small>{{ post.date | date: '%I:%M - %-d %b %Y' }}</small>
+  </div>
+</div>
+
+<hr>
+{% endfor %}
+
+<nav class="pagination">
+  {% if paginator.previous_page %}
+    <a class="button is-primary is-inverted is-outlined pagination-previous" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Previous</a>
+  {% else %}
+    <a class="button is-primary is-inverted is-outlined pagination-next pagination-previous is-disabled">Previous</a>
+  {% endif %}
+
+  {% if paginator.next_page %}
+    <a class="button is-primary is-inverted is-outlined pagination-next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next page</a>
+  {% else %}
+    <a class="button is-primary is-inverted is-outlined pagination-next is-disabled">Next page</a>
+  {% endif %}
+
+  <ul class="pagination-list">
+    {% for page in (1..paginator.total_pages) %}
+    <li>
+      {% if page == paginator.page %}
+      <a class="button is-primary pagination-link is-current">{{ page }}</a>
+      {% elsif page == 1 %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button pagination-link">{{ page }}</a>
+      {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" class="button pagination-link">{{ page }}</a>
+      {% endif %}
+    {% endfor %}
+    </li>
+  </ul>
+</nav>
