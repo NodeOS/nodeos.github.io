@@ -2,7 +2,6 @@
 layout: docs
 ---
 
-
 ## System Directories
 
 The base filesystem is laid out as follows.

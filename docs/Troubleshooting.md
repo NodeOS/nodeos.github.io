@@ -2,7 +2,6 @@
 layout: docs
 ---
 
-
 # Troubleshooting
 
 If you have problems to compile your NodeOS version or get errors during the

@@ -1,63 +1,71 @@
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .hero-head {
-	margin-bottom: 120px;
+  margin-bottom: 60px;
 }
 
 .hero-body {
-	padding: 5%;
+  padding: 5%;
 }
 
 .banner {
-	width: 100%;
-	position: absolute;
+  /* Whitespace fix */
+  position: absolute;
+  left: -5px;
+  width: 105%;
+  height: 120px;
+  background-image: url("/assets/images/hex_art.svg");
+  background-size: contain;
+  background-position: top center;
+  background-repeat: repeat-x;
 }
 
 .nav {
-	box-shadow: none !important;
+  box-shadow: none !important;
+  background-color: #254567 !important;
 }
 
 .nav-item {
-	color: white !important;
+  color: white !important;
 }
 
 .nav-item{
-	font-size: 1.1em;
-	font-weight: bold;
-	text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .nav-item:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .hero-image {
-	width: 80%;
+  width: 80%;
 }
 
 .download:hover {
-	background-color: #1D3555 !important;
-	transition: all 0.3s ease;
+  background-color: #1D3555 !important;
+  transition: all 0.3s ease;
 }
 
 ul li img {
-	width: 15%;
-	vertical-align: middle;
-	margin-right: 5px;
+  width: 15%;
+  vertical-align: middle;
+  margin-right: 5px;
 }
 
 .subscribe {
-	background-color: #1D3555;
+  background-color: #1D3555;
 }
 
 .subscribe h1 {
-	margin-top: 5px;
-	margin-right: 20px;
-	font-size: 1.2em;
-	color: white;
+  margin-top: 5px;
+  margin-right: 20px;
+  font-size: 1.2em;
+  color: white;
 }
 
 .media {
@@ -66,4 +74,17 @@ ul li img {
 
 .post.title {
   margin-bottom: 8px !important;
+}
+
+.footer {
+  background-color: #254567;
+  padding: 40px;
+}
+
+.footer, .footer strong, .footer a, .footer a:visited {
+  color: #fff;
+}
+
+.footer a:hover, .footer a:visited:hover {
+  color: #ccc;
 }

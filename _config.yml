@@ -16,6 +16,7 @@ gems:
 exclude:
   - scripts
   - templates
+  - CNAME
   - package.json
   - Gemfile
   - Gemfile.lock

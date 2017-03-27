@@ -1,6 +1,6 @@
 {
-  "name": "nodeos.github.io",
-  "description": "NodeOS website",
+  "name": "ci-blog",
+  "description": "Blogging platform built on Github issues and continuous integration",
   "author": "NodeOS",
   "version": "1.0.0",
   "license": "MIT",
