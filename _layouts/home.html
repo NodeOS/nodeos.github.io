@@ -13,7 +13,7 @@ layout: default
     <img class="hero-image" src="{{ "/assets/images/terminal-window.png" | relative_url }}">
   </div>
   <div class="column">
-    <ul>
+    <ul class="reasons-why">
       <li><img src="{{ "/assets/images/linux.png" | relative_url }}" />node-os is a full operating system built on top of the linux kernel</li>
       <li><img src="{{ "/assets/images/nodejs.png" | relative_url }}" />node is the primary runtime - no bash here</li>
       <li><img src="{{ "/assets/images/npm.png" | relative_url }}" />node-os uses npm as its primary package manager</li>
@@ -22,17 +22,14 @@ layout: default
     {% assign release = site.github.releases[0] %}
     <div class="columns">
       <div class="column is-6 is-offset-3">
-        <a href="{{ release.html_url }}" class="download button is-outlined is-dark	is-large is-fullwidth">
+        <a href="https://github.com/NodeOS/NodeOS/releases/latest" class="download button is-outlined is-dark	is-large is-fullwidth">
           <span class="icon">
             <i class="fa fa-download"></i>
           </span>
           <span>Latest Release</span>
         </a>
         <p class="has-text-centered">
-          <small>{{ release.tag_name }}</small>
-        </p>
-        <p class="has-text-centered">
-          <a href="{{ site.github.releases_url }}">All releases</a>
+          <a href="https://github.com/NodeOS/NodeOS/releases">All releases</a>
         </p>
       </div>
     </div>

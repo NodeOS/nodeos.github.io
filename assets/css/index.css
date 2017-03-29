@@ -4,11 +4,24 @@
 }
 
 .hero-head {
-  margin-bottom: 60px;
+  margin-bottom: 120px;
 }
 
 .hero-body {
-  padding: 5%;
+  padding: 10px;
+}
+
+.hero-foot {
+  background-color: #254567;
+  padding: 20px;
+}
+
+.hero-foot, .hero-foot strong, .hero-foot a, .footer a:visited {
+  color: #fff;
+}
+
+.hero-foot a:hover, .hero-foot a:visited:hover {
+  color: #ccc;
 }
 
 .banner {
@@ -51,10 +64,14 @@
   transition: all 0.3s ease;
 }
 
-ul li img {
+.reasons-why img {
   width: 15%;
   vertical-align: middle;
   margin-right: 5px;
+}
+
+.reasons-why li {
+  margin-bottom: 10px;
 }
 
 .subscribe {
@@ -76,15 +93,8 @@ ul li img {
   margin-bottom: 8px !important;
 }
 
-.footer {
-  background-color: #254567;
-  padding: 40px;
-}
-
-.footer, .footer strong, .footer a, .footer a:visited {
-  color: #fff;
-}
-
-.footer a:hover, .footer a:visited:hover {
-  color: #ccc;
+@media screen and (max-width: 600px) {
+  .hero-head {
+    margin-bottom: 80px;
+  }
 }
