@@ -6,6 +6,9 @@
   "directories": {
     "doc": "docs"
   },
+  "scripts": {
+    "start": "ci-blog"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NodeOS/nodeos.github.io.git"
