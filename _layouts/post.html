@@ -1,14 +1,28 @@
 ---
-layout: blog
+layout: default
 ---
-<div class="container">
-  <div class="row">
-  	<div class="col-sm-8 col-sm-offset-2">	
-  		<h2><a href="{{page.url}}">{{page.title}}</a></h2>
-			<p class="blog-date">{{ page.date | date_to_string }}</p>
-  		<div class="blog-content">
-  			{{content}}
-  		</div>
-  	</div>
+
+<h3 class="title is-32">
+  {{ page.title }}</h3>
+
+<div class="media">
+  <div class="media-left">
+    <figure class="image is-64x64">
+      <img src="{{ page.avatar-url }}" alt="Image">
+    </figure>
   </div>
+  <div class="media-content">
+    <a href="https://github.com/{{ page.author | escape }}">
+      <span>@{{ page.author | escape }}</span>
+    </a>
+      <p>{{ page.date | date: '%I:%M - %-d %b %Y' }}</p>
+  </div>
+</div>
+
+<div class="content">
+  {{ page.content }}
+
+  <hr>
+
+  <a href="{{ page.github-url }}">{{ page.comments }} Comments</a>
 </div>
