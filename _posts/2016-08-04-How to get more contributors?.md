@@ -3,8 +3,8 @@ layout: post
 title:  How to get more contributors?
 date:   2016-08-04T09:31:59Z
 author: piranna
-avatar-url: https://avatars.githubusercontent.com/u/532414?v=3&s=128
-comments: 52
+avatar-url: https://avatars2.githubusercontent.com/u/532414?v=3&s=128
+comments: 54
 github-url: https://github.com/NodeOS/NodeOS/issues/279
 ---
 I have been thinking about this topic since a long time ago but didn't got yet a clear solution. It seems NodeOS has got some interest to be used on production or it's already being used for it, but for being this possible in the long term it would need to be dedicated some more time and not being only a "hobby" done in our spare time both for maintenance and development of new features (NodeOS has became a really big project with a lot of dependencies that need to be maintained, although I'm trying to automate these tasks the most I can), and since we are several here that would be interested on getting some revenues, I think it's time to ask the big question: how to monetize NodeOS, so I've open this issue to discuss for alternatives and try to find solutions for this.

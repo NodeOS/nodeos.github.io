@@ -3,7 +3,7 @@ layout: post
 title:  Filesystem Layout
 date:   2014-02-21T03:43:54Z
 author: groundwater
-avatar-url: https://avatars.githubusercontent.com/u/538488?v=3&s=128
+avatar-url: https://avatars3.githubusercontent.com/u/538488?v=3&s=128
 comments: 31
 github-url: https://github.com/NodeOS/NodeOS/issues/19
 ---

@@ -3,7 +3,7 @@ layout: post
 title:  A Cool Thought
 date:   2016-04-12T06:21:48Z
 author: lite20
-avatar-url: https://avatars.githubusercontent.com/u/8516575?v=3&s=128
+avatar-url: https://avatars2.githubusercontent.com/u/8516575?v=3&s=128
 comments: 3
 github-url: https://github.com/NodeOS/NodeOS/issues/228
 ---

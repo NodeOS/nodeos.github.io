@@ -3,7 +3,7 @@ layout: post
 title:  I'm rootless
 date:   2015-03-22T19:48:40Z
 author: piranna
-avatar-url: https://avatars.githubusercontent.com/u/532414?v=3&s=128
+avatar-url: https://avatars2.githubusercontent.com/u/532414?v=3&s=128
 comments: 0
 github-url: https://github.com/NodeOS/NodeOS/issues/118
 ---

@@ -3,7 +3,7 @@ layout: post
 title:  What makes NodeOS better than other traditional operating systems?
 date:   2016-01-04T23:33:35Z
 author: evanplaice
-avatar-url: https://avatars.githubusercontent.com/u/303159?v=3&s=128
+avatar-url: https://avatars2.githubusercontent.com/u/303159?v=3&s=128
 comments: 4
 github-url: https://github.com/NodeOS/NodeOS/issues/200
 ---

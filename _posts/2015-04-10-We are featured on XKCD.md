@@ -3,7 +3,7 @@ layout: post
 title:  We are featured on XKCD
 date:   2015-04-10T15:52:20Z
 author: piranna
-avatar-url: https://avatars.githubusercontent.com/u/532414?v=3&s=128
+avatar-url: https://avatars2.githubusercontent.com/u/532414?v=3&s=128
 comments: 2
 github-url: https://github.com/NodeOS/NodeOS/issues/130
 ---

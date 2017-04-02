@@ -3,7 +3,7 @@ layout: post
 title:  System Packages
 date:   2014-02-16T20:40:59Z
 author: groundwater
-avatar-url: https://avatars.githubusercontent.com/u/538488?v=3&s=128
+avatar-url: https://avatars3.githubusercontent.com/u/538488?v=3&s=128
 comments: 7
 github-url: https://github.com/NodeOS/NodeOS/issues/16
 ---

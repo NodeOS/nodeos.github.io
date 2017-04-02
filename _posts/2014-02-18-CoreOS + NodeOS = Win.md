@@ -3,7 +3,7 @@ layout: post
 title:  CoreOS + NodeOS = Win
 date:   2014-02-18T06:24:38Z
 author: groundwater
-avatar-url: https://avatars.githubusercontent.com/u/538488?v=3&s=128
+avatar-url: https://avatars3.githubusercontent.com/u/538488?v=3&s=128
 comments: 16
 github-url: https://github.com/NodeOS/NodeOS/issues/17
 ---

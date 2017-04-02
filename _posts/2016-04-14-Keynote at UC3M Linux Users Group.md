@@ -3,7 +3,7 @@ layout: post
 title:  Keynote at UC3M Linux Users Group
 date:   2016-04-14T19:56:21Z
 author: piranna
-avatar-url: https://avatars.githubusercontent.com/u/532414?v=3&s=128
+avatar-url: https://avatars2.githubusercontent.com/u/532414?v=3&s=128
 comments: 4
 github-url: https://github.com/NodeOS/NodeOS/issues/229
 ---

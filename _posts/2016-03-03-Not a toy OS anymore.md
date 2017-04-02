@@ -3,7 +3,7 @@ layout: post
 title:  Not a toy OS anymore
 date:   2016-03-03T00:11:31Z
 author: piranna
-avatar-url: https://avatars.githubusercontent.com/u/532414?v=3&s=128
+avatar-url: https://avatars2.githubusercontent.com/u/532414?v=3&s=128
 comments: 14
 github-url: https://github.com/NodeOS/NodeOS/issues/216
 ---

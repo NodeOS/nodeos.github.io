@@ -3,7 +3,7 @@ layout: post
 title:  Let's build a beta
 date:   2015-04-29T09:29:02Z
 author: piranna
-avatar-url: https://avatars.githubusercontent.com/u/532414?v=3&s=128
+avatar-url: https://avatars2.githubusercontent.com/u/532414?v=3&s=128
 comments: 12
 github-url: https://github.com/NodeOS/NodeOS/issues/146
 ---

@@ -3,7 +3,7 @@ layout: post
 title:  New organization scheme
 date:   2016-08-14T18:29:47Z
 author: piranna
-avatar-url: https://avatars.githubusercontent.com/u/532414?v=3&s=128
+avatar-url: https://avatars2.githubusercontent.com/u/532414?v=3&s=128
 comments: 6
 github-url: https://github.com/NodeOS/NodeOS/issues/292
 ---

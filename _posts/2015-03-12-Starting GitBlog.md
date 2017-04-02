@@ -3,7 +3,7 @@ layout: post
 title:  Starting GitBlog
 date:   2015-03-12T22:42:23Z
 author: piranna
-avatar-url: https://avatars.githubusercontent.com/u/532414?v=3&s=128
+avatar-url: https://avatars2.githubusercontent.com/u/532414?v=3&s=128
 comments: 3
 github-url: https://github.com/NodeOS/NodeOS/issues/115
 ---

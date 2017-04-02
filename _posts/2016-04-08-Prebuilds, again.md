@@ -3,7 +3,7 @@ layout: post
 title:  Prebuilds, again
 date:   2016-04-08T20:05:43Z
 author: piranna
-avatar-url: https://avatars.githubusercontent.com/u/532414?v=3&s=128
+avatar-url: https://avatars2.githubusercontent.com/u/532414?v=3&s=128
 comments: 0
 github-url: https://github.com/NodeOS/NodeOS/issues/224
 ---

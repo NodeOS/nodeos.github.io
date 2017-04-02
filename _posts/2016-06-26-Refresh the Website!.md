@@ -3,8 +3,8 @@ layout: post
 title:  Refresh the Website!
 date:   2016-06-26T00:42:03Z
 author: lite20
-avatar-url: https://avatars.githubusercontent.com/u/8516575?v=3&s=128
-comments: 60
+avatar-url: https://avatars2.githubusercontent.com/u/8516575?v=3&s=128
+comments: 124
 github-url: https://github.com/NodeOS/NodeOS/issues/261
 ---
 Hi! Are you a front-end web developer? Now is your chance for you and your buddies to contribute to NodeOS (without having to decipher underlying technology in the build process; double win!)
