@@ -1,0 +1,22 @@
+{
+  "name": "nodeos.github.io",
+  "version": "2.0.0",
+  "description": "NodeOS Website",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NodeOS/nodeos.github.io.git"
+  },
+  "author": "NodeOS team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NodeOS/nodeos.github.io/issues"
+  },
+  "homepage": "https://github.com/NodeOS/nodeos.github.io#readme",
+  "devDependencies": {
+    "ci-blog": "github:nodeos/ci-blog"
+  }
+}
